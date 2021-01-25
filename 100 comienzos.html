@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="100 comienzos" startnode="19" creator="Twine" creator-version="2.3.5" ifid="5F0FEB3E-7440-4DBB-A19D-D4841C0C4555" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+<tw-storydata name="100 comienzos" startnode="19" creator="Twine" creator-version="2.3.9" ifid="5F0FEB3E-7440-4DBB-A19D-D4841C0C4555" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 tw-story{
   background-color: white;
@@ -62,16 +62,18 @@ tw-hook[name="blink"] {
 
 
 </script><tw-tag name="1era-Rev" color="blue"></tw-tag>,<tw-tag name="Añade-desbloqueo" color="green"></tw-tag>,<tw-tag name="Requiere-Desbloqueo" color="blue"></tw-tag>,<tw-tag name="Suma-Desbloqueo" color="green"></tw-tag><tw-passagedata pid="1" name="INICIO" tags="1era-Rev" position="1001,150" size="100,100">(set: $historias to 0)
-{
-(if: $finalBuenoDisponible is 1)[You feel that today will be a special day(click-goto: &quot;special&quot;, &quot;Habitación 3&quot;)]
+
+(if: $finalBuenoDisponible is 1)[You have a feeling that today will be a special day(click-goto: &quot;special&quot;, &quot;Habitación 3&quot;)]
+
 (if: $ideaOriginal is 1)[The screen glows in the darkness of the room hurting your eyes. You notebook, open by a page full of hastly-writen notes (some old and some very recent), lie near your keyboard. On the screen the cursor(click-replace: &quot;cursor&quot;)[misterious cursor] blinks slowly at the end of a sentence, on a document almost completely blank. 
 
 **&gt;**// It all started ten years ago, by the sea.//**|blink&gt;[_]**]
+
 (else:)[The screen glows in the darkness of the room, hurting your eyes. Your notebook, open by a blank page(click-replace:&quot;blank page&quot;)[blank page that is starting to feel very familiar to you], lie near your keyboard. On the screen the cursor (click-replace: &quot;cursor&quot;)[feared cursor] blinks over the white background of a clean new document.
 
 
 **&gt;|blink&gt;[_]**]
-}
+
 
 [[You look through the window|Ventana]]
 [[You lie your hands over the keyboard|Teclado]]
@@ -115,13 +117,13 @@ You decide that if you really want to feel like a person, you should take a show
 [[You chat online with your friends|Chatear]]]</tw-passagedata><tw-passagedata pid="8" name="Ducha" tags="1era-Rev" position="593,560" size="100,100">As soon as the warm water touch your body you start to feel better. Gradually, the shower windows are misted up with condensation blocking the view ot the bathroom, and you feel again that comforting solitude that very few understand.
 (if: $ideaOriginal is 1)[The water running through your body clarifies your ideas. You feel that your decision of exploring the story about the sea is the best that you have made on weeks.
 You just needed that little push to re-activate the machinery of your mind. Now you had to force her to stay focused on the task.
-Maybe you creative block is coming to an end(click: &quot;Maybe you creative block is coming to an end&quot;)[. And with that thought illuminating your heart, you come out of the shower with illusion and hope.(click-goto: &quot;you come out of the shower&quot;, &quot;Teclado&quot;)]]
+Maybe you creative block is coming to an end(click: &quot;Maybe you creative block is coming to an end&quot;)[. And with that thought illuminating your heart, you come out of the shower full of illusion and hope.(click-goto: &quot;you come out of the shower&quot;, &quot;Teclado&quot;)]]
 (else:)[It&#39;s normal to feel frustrated(click: &quot;It&#39;s normal to feel frustrated&quot;)[. The creative process is complicated and demands a lot from the mind. It&#39;s normal to get stuck sometimes.
 Although your current block lasted for weeks(click: &quot;Although your current block lasted for weeks&quot;)[. All you&#39;ve done is smudge a lot of pages and open that damn document over and over again to face a cursor who doesn&#39;t care about you at all.
 You repeat to yourself that everything will be fine soon(click: &quot;You repeat to yourself that everything will be fine soon&quot;) [, although you haven&#39;t listened to yourself for a long time. It all sounds hollow. Everything is futile, a waste of time and energy. 
 Why do these ideas always haunt you in the shower or in bed?(click: &quot;Why do these ideas always haunt you in the shower or in bed?&quot;)[. Can&#39;t your brain leave you alone even in these little moments of intimacy? Does it have to remind you of your failures every time it seems that you can get out of that dark hole?
 
-You force yourself out of the shower, almost in tears drowned in frustration.(click-goto: &quot;You force yourself out of the shower.&quot;, &quot;Habitación2&quot;)]]]]]</tw-passagedata><tw-passagedata pid="9" name="Intento" tags="" position="1597,500" size="100,100">Cierras los ojos para intentar concentrarte y escribes lo primero que te viene a la cabeza:
+You force yourself out of the shower, almost in tears drowned in frustration.(click-goto: &quot;You force yourself out of the shower.&quot;, &quot;Habitación2&quot;)]]]]]</tw-passagedata><tw-passagedata pid="9" name="Intento" tags="" position="1597,500" size="100,100">You close your eyes trying to focus and start typing the first idea that comes to your mind:
 
 **&gt;|blink&gt;[_]**
 
@@ -134,12 +136,12 @@ You force yourself out of the shower, almost in tears drowned in frustration.(cl
 |cierre)[Dejaste el teclado y suspiraste con fuerza. La sensación de no saber que estabas haciendo permanecía en tu interior.
 
 [[Contemplaste la pantalla|Pantalla en blanco]]]</tw-passagedata><tw-passagedata pid="10" name="Pantalla en blanco" tags="" position="1599,702" size="100,100">(if: $elMar is &quot;Quizá ésta vez sí.&quot;)[[(set: $ideaOriginal to 1)]
-**&gt;**// Todo comenzó hace diez años, en el mar//**|blink&gt;[_]**
+**&gt;**// It all started ten years ago, at sea//**|blink&gt;[_]**
 
 Las palabras que habías escrito habían calado en tu mente. Si bien es cierto que era una idea antigua y cuando habías intentado escribirla nunca habías avanzado demasiado, puede que revisitar ese concepto te ayude a desbloquearte.
-Apenas unas pocas palabras en la pantalla, pero habían tenido un efecto increíble en tu cerebro.
+It was only a few words on the screen, but they had an incredible effect on your brain.
 
-Es un comienzo.(click-goto: &quot;Es un comienzo.&quot;, &quot;Habitación2&quot;)]
+It was a beginning.(click-goto: &quot;It was a beginning.&quot;, &quot;Habitación2&quot;)]
 (else:)[Ante ti sólo queda el fondo de escritorio de tu ordenador. Tu arrebato de ira no te ha hecho sentir mejor y no has avanzado nada.
 
 Necesitas otro enfoque(click: &quot;Necesitas otro enfoque&quot;)[. Necesitas algo que consiga inspirarte, alguna idea salvadora que tu cerebro quiera devorar como si de un manjar se tratase.
@@ -153,7 +155,7 @@ As soon as you start ...
 
 **&gt;|blink&gt;[_]**
 
-(link: &quot;...feel the roughness of some of the keys&quot;) [You notice the roughness of some of the keys and how some offer more resistance, slowing you down when typing.
+(link: &quot;...feel the roughness of some of the keys&quot;) [You notice the roughness of some of the keys and how some of them offer more resistance than others, slowing you down when typing.
 (link: &quot;...the sound start to be annoying&quot;) [The sound starts to be annoying, like a little hammer incessantly beating your ears, reminding you that you are not quick enough, that you are wasting time.
 (link: &quot;...your wrists are getting sore&quot;) [You have to constantly change the position of the keyboard because you notice your wrists sore while you are typing.
 (if: $ideaOriginal is 1)[[[... But today you don&#39;t seem to care so much about that little annoyances|No te importa]]]
@@ -205,20 +207,15 @@ You realize with annoyance that you have been staring at the screen and that fla
 (event: when time &gt; 3s) [&lt;audio src=&quot;teclado.wav&quot; autoplay&gt;&lt;/audio&gt;]
 (event: when time &gt; 4s) [&lt;h2&gt;Blank Page&lt;/h2&gt;]
 (event: when time &gt; 7s) [&lt;audio src=&quot;teclado.wav&quot; autoplay&gt;&lt;/audio&gt;]
-(event: when time &gt; 8s) [&lt;h4&gt;A short story about creative block and the imposter syndrome.&lt;/h4&gt;]
+(event: when time &gt; 8s) [&lt;h4&gt;A short story about imposter syndrome and creative block.&lt;/h4&gt;]
 
 (event: when time &gt; 12s) [ 
 [[BEGIN|INICIO]]
-[[A message from the creator|Mensaje del desarrollador]]]</tw-passagedata><tw-passagedata pid="20" name="Habitación 3" tags="1era-Rev" position="263,99" size="100,100">Your mind has cleared. The nausea has subsided. You look at your computer and it seems that everything finally makes sense.
+[[A message from the creator|Mensaje del desarrollador]]]</tw-passagedata><tw-passagedata pid="20" name="Habitación 3" tags="1era-Rev" position="263,99" size="100,100">Your mind has cleared. The nausea has subsided. You look at your computer and it seems that everything (click-append: &quot;everything&quot;)[ finally (click-append: &quot;finally&quot;)[ makes sense.]]
 
 **&gt;|blink&gt;[_]**
 
-El cursor sigue parpadeando impertérrito, pero ahora hay texto sobre él. Un texto que te incita a explorarlo.
-La página ya no está en blanco. Una nueva puerta se abre al futuro.
-
-Abres la libreta y pones las manos en el teclado.
-
-The cursor (click-prepend: &quot;cursor&quot;) [ glorious ] keeps blinking undaunted, but now there is text before it. A text that encourages you to explore it.
+The cursor (click-prepend: &quot;cursor&quot;) [ glorious ] keeps blinking undaunted, but now there is text before it. A text that encourages you to explore it. Mold it.
 The page is no longer blank. A new door opens to the future.
 
 You open the notebook and put your hands on the keyboard.
@@ -231,12 +228,12 @@ Después de lo que parecen horas (click: &quot;Después de lo que parecen horas&
 
 </tw-passagedata><tw-passagedata pid="22" name="La magia comienza" tags="" position="264,302" size="100,100">**&gt;** (event: when time &gt; 0.1s)[&lt;audio src=&quot;teclado.wav&quot; autoplay loop&gt;&lt;/audio&gt;] //(event: when time &gt; 0.1s)[Todo] (event: when time &gt; 0.2s)[comenzó] (event: when time &gt; 0.4s)[hace] (event: when time &gt; 0.5s)[diez] (event: when time &gt; 0.6s)[años] (event: when time &gt; 0.8s)[, en] (event: when time &gt; 0.9s)[el mar.] (event: when time &gt; 1.1s)[Era] (event: when time &gt; 1.3s)[uno] (event: when time &gt; 1s)[de] (event: when time &gt; 1.1s)[esos] (event: when time &gt; 1.3s)[días] (event: when time &gt; 1.5s)[de] (event: when time &gt; 1.6s)[lluvia] (event: when time &gt; 1.8s)[incesante] (event: when time &gt; 1.9s)[en] (event: when time &gt; 2.1s)[los] (event: when time &gt; 2.2s)[que] (event: when time &gt; 2.3s)[sólo] (event: when time &gt; 2.4s)[los] (event: when time &gt; 2.6s)[pescadores] (event: when time &gt; 2.7s)[más] (event: when time &gt; 2.9s)[aventureros] (event: when time &gt; 4s)[se] (event: when time &gt; 3.2s)[atrevían] (event: when time &gt; 3.3s)[a] (event: when time &gt; 3.5s)[enfrentarse] (event: when time &gt; 3.7s)[a las] (event: when time &gt; 3.9s)[inclemencias] (event: when time &gt; 4.1s)[del tiempo.] (event: when time &gt; 4.3s)[Pero] (event: when time &gt; 4.4s)[yo] (event: when time &gt; 4.7s)[tenía un propósito,] (event: when time &gt; 4.9s)[uno que] (event: when time &gt; 5.1s)[ni siquiera] (event: when time &gt; 5.3s)[la tormenta] (event: when time &gt; 5.4s)[más] (event: when time &gt; 5.7s)[severa] (event: when time &gt; 6s)[que Neptuno] (event: when time &gt; 6.3s)[se atreviera] (event: when time &gt; 6.6s)[a lanzar] (event: when time &gt; 6.8s)[sobre mí] (event: when time &gt; 7s)[podría] (event: when time &gt; 7.2s)[torcer...]// **|blink&gt;[_]**
 
-[[FIN]]</tw-passagedata><tw-passagedata pid="23" name="Libreta" tags="1era-Rev" position="1139,544" size="100,100">You have used that old notebook countless times to jot down individual ideas and phrases. Inspiraciones, bocetos, even some phone numbers (click-append: &quot;some phone numbers&quot;) [ (with a bit of regret)] when you couldn&#39;t find another piece of paper at hand.
+[[FIN]]</tw-passagedata><tw-passagedata pid="23" name="Libreta" tags="1era-Rev" position="1139,544" size="100,100">You have used that old notebook countless times to jot down individual ideas and phrases. Inspirations, doodles, even some phone numbers (click-append: &quot;some phone numbers&quot;) [ (with a bit of regret)] when you couldn&#39;t find another piece of paper at hand.
 
 That notebook had been waiting some ink for a very long time. 
 
 You go through the notebook and turn some pages: (click: &quot;You go through the notebook and turn some pages: &quot;) [
-(cycling-link: &quot;A girl jumps from a balcony, but does not fall and just floats in the air. The only way to get it to land is to pop it like a balloon.&quot;, &quot;Everyone is accompanied by the ghost of their death, who speaks and advises them but refuses to tell how they&#39;ll really die.&quot;, &quot;A boy has fallen into a cave and the spirit of his deceased brother tries to guide him to escape.&quot;, &quot;A hidden door in a hotel in the mountains leads to an unknown dimension in which the protagonist is the only hope for salvation.&quot;, &quot;Humanity&#39;s dispair has begun to turn into a dark liquid that seeps through the cracks in the earth and drives people crazy.&quot;, &quot;The gods have died, but their corpses have become visible in the world, which encourages the emergence of cults in their name.&quot;, &quot;After the nuclear apocalypse, the man who caused it ends up locked up with the last survivors.&quot;, &quot;When we reached the stars, we discovered that our ancestors had arrived earlier.&quot;)]
+(cycling-link: &quot;A girl jumps from a balcony, but does not fall and just floats in the air. The only way to get it to land is to pop it like a balloon.&quot;, &quot;Everyone is accompanied by the ghost of their death, who speaks and advises them but refuses to tell how they&#39;ll really die.&quot;, &quot;A boy has fallen into a cave and the spirit of his deceased brother tries to guide him to escape.&quot;, &quot;A hidden door in a hotel in the mountains leads to an unknown dimension in which the protagonist is the only hope for salvation.&quot;, &quot;Humanity&#39;s dispair has begun to turn into a dark liquid that seeps through the cracks in the earth and drives people crazy.&quot;, &quot;The gods have died, but their corpses have become visible in the world, which encourages the emergence of cults in their name.&quot;, &quot;After the nuclear apocalypse, the man who caused it ends up locked up with the last survivors.&quot;, &quot;When we reached the stars, we discovered that our ancestors had arrived there earlier.&quot;)]
 (if: $elMar is &quot;Quizá ésta vez sí.&quot;)[ You had a very good idea some time ago(click: &quot;You had a very good idea some time ago&quot;)[ for a story. About the sea and how it affects people and their lives. You go through the pages of the notebook until you find the first anotations of it.
 It had... something.  It was an intimate story, exploring some concepts that motivated you. However, you had dismissed it several times for not knowing how to continue it after the first few pages.
 You take your beloved pen(click: &quot;You take your beloved pen&quot;)[ and write down the first sentence that comes to your mind after the begining. You review what you have written(click: &quot;You review what you have written&quot;)[  and it seems to work pretty well. You go on for a while(click: &quot;You go on for a while&quot;) [ jotting down more sentences, crossing out some old passages and adding new ones. You don&#39;t really know how long you kept that frantic rhythm(click: &quot;You don&#39;t really know how long you kept that frantic rhythm&quot;)[(set: $libretaLlena to 1), but now the notebook sparkled with new paragraphs and sentences and a whole host of new possibilities. With a feeling of triumph, you closed the notebook and decided to leave it for today.(click-goto: &quot;decided to leave it for today.&quot;, &quot;Habitación2&quot;)]]]]]]
