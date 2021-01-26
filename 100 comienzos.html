@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="100 comienzos" startnode="19" creator="Twine" creator-version="2.3.5" ifid="5F0FEB3E-7440-4DBB-A19D-D4841C0C4555" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+<tw-storydata name="100 comienzos" startnode="19" creator="Twine" creator-version="2.3.9" ifid="5F0FEB3E-7440-4DBB-A19D-D4841C0C4555" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 tw-story{
   background-color: white;
@@ -66,7 +66,7 @@ tw-hook[name="blink"] {
 (if: $finalBuenoDisponible is 1)[You feel that today will be a special day(click-goto: &quot;special&quot;, &quot;Habitación 3&quot;)]
 (if: $ideaOriginal is 1)[The screen glows in the darkness of the room hurting your eyes. You notebook, open by a page full of hastly-writen notes (some old and some very recent), lie near your keyboard. On the screen the cursor(click-replace: &quot;cursor&quot;)[misterious cursor] blinks slowly at the end of a sentence, on a document almost completely blank. 
 
-**&gt;**// It all started ten years ago, by the sea.//**|blink&gt;[_]**]
+**&gt;**// It all started ten years ago, at sea.//**|blink&gt;[_]**]
 (else:)[The screen glows in the darkness of the room, hurting your eyes. Your notebook, open by a blank page(click-replace:&quot;blank page&quot;)[blank page that is starting to feel very familiar to you], lie near your keyboard. On the screen the cursor (click-replace: &quot;cursor&quot;)[feared cursor] blinks over the white background of a clean new document.
 
 
@@ -103,9 +103,9 @@ You decide that if you really want to feel like a person, you should take a show
 [[You enter the shower|Ducha]]</tw-passagedata><tw-passagedata pid="6" name="Quedarse" tags="1era-Rev" position="805,277" size="100,100">On second thought, you would lose precious time and you are already lagging behind your schedule. You have to start writing now. That&#39;s the reason you got up so early.
 
 [[You put your eyes on the screen again|Pantalla2]]
-[[You take your notebook, looking for ideas|Libreta]]</tw-passagedata><tw-passagedata pid="7" name="Habitación2" tags="" position="1101,801" size="100,100">Vuelves a dar un vistazo a tu apartamento aunque ya te conoces el contenido de memoria. En la estantería reposan los mismos libros sobre escritura y estilo que ya has ojeado mil veces (click: &quot;mil veces&quot;)[ (y de los que poco o nada has conseguido aprender, todo sea dicho)]. La minúscula cocina aún conserva los restos de la comida de ayer (click: &quot;los restos de la comida de ayer&quot;)[ y las manchas de muchas comidas más que han sobrevivido a tus escasos intentos de limpieza]. Sobre la cama deshecha hay algunas cartas y papeles.
+[[You take your notebook, looking for ideas|Libreta]]</tw-passagedata><tw-passagedata pid="7" name="Habitación2" tags="1era-Rev" position="1101,801" size="100,100">You take a look at your apartment again, although you already know everything in it by heart. On the shelf lay the same books on writing and style that you&#39;ve already read from cover to cover thousands of times (click: &quot;thousands of times&quot;)[ (that sound like empty words to you, all things considered)]. The tiny kitchen is still covered by the remains of yesterday&#39;s dinner (click: &quot;the remains of yesterday&#39;s dinner&quot;)[ and the stains of many more meals that have survived your feeble cleaning attemps]. The unmade bed is covered with blurred papers.
 
-(if: $ideaOriginal is 1)[Hoy sin embargo lo ves todo con otros ojos. Tu apartamento se te asemeja menos a una prisión y más a un refugio creativo. Sientes que todo empieza a encarrilarse y pronto podrás emerger triunfante.
+(if: $ideaOriginal is 1)[Today, however, you see everything with different eyes. Your apartment is less like a prison and more like a creative haven. You feel that everything begins to get back on track and you will soon be able to emerge triumphant.
 
 [[You prepare a nutritious dinner|Cena]]
 [[You go to bed to read a little before sleeping|Lectura]]]
@@ -121,7 +121,7 @@ Although your current block lasted for weeks(click: &quot;Although your current 
 You repeat to yourself that everything will be fine soon(click: &quot;You repeat to yourself that everything will be fine soon&quot;) [, although you haven&#39;t listened to yourself for a long time. It all sounds hollow. Everything is futile, a waste of time and energy. 
 Why do these ideas always haunt you in the shower or in bed?(click: &quot;Why do these ideas always haunt you in the shower or in bed?&quot;)[. Can&#39;t your brain leave you alone even in these little moments of intimacy? Does it have to remind you of your failures every time it seems that you can get out of that dark hole?
 
-You force yourself out of the shower, almost in tears drowned in frustration.(click-goto: &quot;You force yourself out of the shower.&quot;, &quot;Habitación2&quot;)]]]]]</tw-passagedata><tw-passagedata pid="9" name="Intento" tags="" position="1597,500" size="100,100">Cierras los ojos para intentar concentrarte y escribes lo primero que te viene a la cabeza:
+You force yourself out of the shower, almost in tears drowned in frustration.(click-goto: &quot;You force yourself out of the shower.&quot;, &quot;Habitación2&quot;)]]]]]</tw-passagedata><tw-passagedata pid="9" name="Intento" tags="" position="1597,500" size="100,100">You closed your eyes, trying to focus, and began to write the first idea to come to your mind:
 
 **&gt;|blink&gt;[_]**
 
@@ -209,7 +209,7 @@ You realize with annoyance that you have been staring at the screen and that fla
 
 (event: when time &gt; 12s) [ 
 [[BEGIN|INICIO]]
-[[A message from the creator|Mensaje del desarrollador]]]</tw-passagedata><tw-passagedata pid="20" name="Habitación 3" tags="1era-Rev" position="263,99" size="100,100">Your mind has cleared. The nausea has subsided. You look at your computer and it seems that everything finally makes sense.
+[[A message from the creator|Mensaje del desarrollador]]]</tw-passagedata><tw-passagedata pid="20" name="Habitación 3" tags="1era-Rev" position="204.66666666666666,2.3333333333333286" size="100,100">Your mind has cleared. The nausea has subsided. You look at your computer and it seems that everything finally makes sense.
 
 **&gt;|blink&gt;[_]**
 
@@ -218,14 +218,14 @@ The cursor (click-prepend: &quot;cursor&quot;) [ glorious ] keeps blinking undau
 The page is no longer blank. A new door opens to the future.
 
 You open the notebook and put your hands on the keyboard.
-[[The magic begins|La magia comienza]]</tw-passagedata><tw-passagedata pid="21" name="No te importa" tags="" position="1799,302" size="100,100">(set: $finalBuenoDisponible to 1)
-Hoy tu cerebro no parece rendirse a las incomodidades ni las pequeñas molestias que te han venido acechando todo éste tiempo. Tus manos reposan tranquilas sobre el teclado, esperando instrucciones. Deseando trabajar.
+[[The magic begins|La magia comienza]]</tw-passagedata><tw-passagedata pid="21" name="No te importa" tags="1era-Rev" position="1455.6666666666665,410.33333333333337" size="100,100">(set: $finalBuenoDisponible to 1)
+Today your brain does not seem to surrender to the discomforts or the small annoyances that have been haunting you all this time. Your hands rest calmly on the keyboard, waiting for your instructions. Looking forward to work.
 
-Comienzas lentamente, una palabra por vez, recordando como habías empezado en las ocasiones anteriores. Pero descartas rápidamente el continuar por ahí, es el momento de darle un nuevo enfoque a la historia.
+You start slowly, one word at a time, remembering how you started on the previous occasions. But you quickly discard continuing around, it&#39;s time to give the story a new focus.
 
-Después de lo que parecen horas (click: &quot;Después de lo que parecen horas&quot;)[,  varios párrafos pueblan la página y decides con una enorme sensación de triunfo en tu interior, que [[puedes descansar por hoy.|Habitación2]]]
+After what seemed like hours (click: &quot;After what seemed like hours&quot;)[, several paragraphs populate the page and you decide with a huge sense of triumph deep inside your heart that [[you can rest for today.|Habitación2]]]
 
-</tw-passagedata><tw-passagedata pid="22" name="La magia comienza" tags="1era-Rev" position="264,302" size="100,100">**&gt;** (event: when time &gt; 0.1s)[&lt;audio src=&quot;teclado.wav&quot; autoplay loop&gt;&lt;/audio&gt;] //(event: when time &gt; 0.1s)[It] (event: when time &gt; 0.2s)[all] (event: when time &gt; 0.4s)[started] (event: when time &gt; 0.5s)[ten] (event: when time &gt; 0.6s)[years] (event: when time &gt; 0.8s)[ago,] (event: when time &gt; 0.9s)[at sea.] (event: when time &gt; 1.1s)[It] (event: when time &gt; 1.3s)[was] (event: when time &gt; 1s)[one] (event: when time &gt; 1.1s)[of] (event: when time &gt; 1.3s)[those] (event: when time &gt; 1.5s)[days,] (event: when time &gt; 1.6s)[when] (event: when time &gt; 1.8s)[only the] (event: when time &gt; 1.9s)[most] (event: when time &gt; 2.1s)[adventurous] (event: when time &gt; 2.2s)[fishermen] (event: when time &gt; 2.3s)[dared to] (event: when time &gt; 2.4s)[face] (event: when time &gt; 2.6s)[the] (event: when time &gt; 2.7s)[inclement] (event: when time &gt; 2.9s)[weather.] (event: when time &gt; 4s)[ But] (event: when time &gt; 3.2s)[I had] (event: when time &gt; 3.3s)[a] (event: when time &gt; 3.5s)[purpouse] (event: when time &gt; 3.7s)[, one] (event: when time &gt; 3.9s)[that] (event: when time &gt; 4.1s)[not] (event: when time &gt; 4.3s)[even] (event: when time &gt; 4.4s)[the] (event: when time &gt; 4.7s)[severest] (event: when time &gt; 4.9s)[storm] (event: when time &gt; 5.1s)[Neptune] (event: when time &gt; 5.3s)[dared] (event: when time &gt; 5.4s)[to throw] (event: when time &gt; 5.7s)[on] (event: when time &gt; 6s)[me] (event: when time &gt; 6.3s)[could] (event: when time &gt; 6.6s)[even] (event: when time &gt; 6.8s)[dream] (event: when time &gt; 7s)[to] (event: when time &gt; 7.2s)[twist...]// **|blink&gt;[_]**
+</tw-passagedata><tw-passagedata pid="22" name="La magia comienza" tags="1era-Rev" position="205.66666666666666,205.33333333333331" size="100,100">**&gt;** (event: when time &gt; 0.1s)[&lt;audio src=&quot;teclado.wav&quot; autoplay loop&gt;&lt;/audio&gt;] //(event: when time &gt; 0.1s)[It] (event: when time &gt; 0.2s)[all] (event: when time &gt; 0.4s)[started] (event: when time &gt; 0.5s)[ten] (event: when time &gt; 0.6s)[years] (event: when time &gt; 0.8s)[ago,] (event: when time &gt; 0.9s)[at sea.] (event: when time &gt; 1.1s)[It] (event: when time &gt; 1.3s)[was] (event: when time &gt; 1s)[one] (event: when time &gt; 1.1s)[of] (event: when time &gt; 1.3s)[those] (event: when time &gt; 1.5s)[days,] (event: when time &gt; 1.6s)[when] (event: when time &gt; 1.8s)[only the] (event: when time &gt; 1.9s)[most] (event: when time &gt; 2.1s)[adventurous] (event: when time &gt; 2.2s)[fishermen] (event: when time &gt; 2.3s)[dared to] (event: when time &gt; 2.4s)[face] (event: when time &gt; 2.6s)[the] (event: when time &gt; 2.7s)[inclement] (event: when time &gt; 2.9s)[weather.] (event: when time &gt; 4s)[ But] (event: when time &gt; 3.2s)[I had] (event: when time &gt; 3.3s)[a] (event: when time &gt; 3.5s)[purpouse] (event: when time &gt; 3.7s)[, one] (event: when time &gt; 3.9s)[that] (event: when time &gt; 4.1s)[not] (event: when time &gt; 4.3s)[even] (event: when time &gt; 4.4s)[the] (event: when time &gt; 4.7s)[severest] (event: when time &gt; 4.9s)[storm] (event: when time &gt; 5.1s)[Neptune] (event: when time &gt; 5.3s)[dared] (event: when time &gt; 5.4s)[to throw] (event: when time &gt; 5.7s)[on] (event: when time &gt; 6s)[me] (event: when time &gt; 6.3s)[could] (event: when time &gt; 6.6s)[even] (event: when time &gt; 6.8s)[dream] (event: when time &gt; 7s)[to] (event: when time &gt; 7.2s)[twist...]// **|blink&gt;[_]**
 
 [[THE END|FIN]]</tw-passagedata><tw-passagedata pid="23" name="Libreta" tags="1era-Rev" position="1139,544" size="100,100">You have used that old notebook countless times to jot down individual ideas and phrases. Inspiraciones, bocetos, even some phone numbers (click-append: &quot;some phone numbers&quot;) [ (with a bit of regret)] when you couldn&#39;t find another piece of paper at hand.
 
@@ -252,7 +252,7 @@ I really hope that this little work resonates with you. I will be very grateful 
 
 Thank you.
 
-[[BEGIN|INICIO]]</tw-passagedata><tw-passagedata pid="27" name="FIN" tags="1era-Rev" position="259,502" size="100,100">&lt;h2&gt;&lt;center&gt;THE END&lt;/h2&gt;&lt;/center&gt;
+[[BEGIN|INICIO]]</tw-passagedata><tw-passagedata pid="27" name="FIN" tags="1era-Rev" position="200.66666666666666,405.3333333333333" size="100,100">&lt;h2&gt;&lt;center&gt;THE END&lt;/h2&gt;&lt;/center&gt;
 
 Thanks for your time, I hope you liked this little piece.
 
