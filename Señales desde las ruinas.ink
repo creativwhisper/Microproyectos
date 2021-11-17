@@ -14,6 +14,7 @@ RADIO: (estática)... desde las ruinas de... (estática) ... respondan por favor
 
 
 = desde_donde
+{presencia}
 -> END
 
 = identificarse
